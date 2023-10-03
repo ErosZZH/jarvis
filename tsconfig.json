@@ -1,0 +1,56 @@
+// {
+//     "compilerOptions": {
+//       "target": "es2022",
+//       "module": "node16",
+//       "lib": ["ES2022"],
+//       "moduleResolution": "node16",
+//       "rootDir": ".",
+//       "outDir": "build",
+//       "allowSyntheticDefaultImports": true,
+//       "importHelpers": true,
+//       "alwaysStrict": true,
+//       "sourceMap": true,
+//       "forceConsistentCasingInFileNames": true,
+//       "noFallthroughCasesInSwitch": true,
+//       "noImplicitReturns": true,
+//       "noUnusedLocals": true,
+//       "noUnusedParameters": true,
+//       "noImplicitAny": false,
+//       "noImplicitThis": false,
+//       "strictNullChecks": false
+//     },
+//     "include": ["src/**/*", "__tests__/**/*"],
+//     "exclude": ["node_modules", "build", "dist"]
+// }
+
+{
+    "extends": "@tsconfig/recommended",
+    "compilerOptions": {
+      "outDir": "build",
+      "lib": [
+        "ES2021",
+        "ES2022.Object",
+        "DOM"
+      ],
+      "target": "ES2021",
+      "module": "nodenext",
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "rootDir": ".",
+      "declaration": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUnusedParameters": true,
+      "useDefineForClassFields": true,
+      "strictPropertyInitialization": false
+    },
+    "exclude": [
+      "node_modules/",
+      "dist/",
+      "build/"
+    ],
+    "include": [
+      "./src",
+      "./__tests__"
+    ]
+}
