@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "langchain": "^0.0.146",
+    "microsoft-cognitiveservices-speech-sdk": "^1.32.0",
     "tslib": "^2.6.2"
   },
   "repository": {
