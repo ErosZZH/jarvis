@@ -1,0 +1,33 @@
+{
+  "name": "dialog-service",
+  "version": "1.0.0",
+  "description": "The microservice that provide dialog service",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "npm run test",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint",
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts",
+    "prod": "npm run clean && npm run compile && node build/index.js"
+  },
+  "author": "Rick Zhu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "20.12.7",
+    "gts": "^5.3.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}
